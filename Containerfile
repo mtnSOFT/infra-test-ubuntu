@@ -8,6 +8,7 @@ RUN apt-get update && \
       python3 python3-pip \
       lsb-release \
       sudo \
+      systemd \
       && rm -rf /var/lib/apt/lists/*
 
 RUN userdel -r ubuntu || true
